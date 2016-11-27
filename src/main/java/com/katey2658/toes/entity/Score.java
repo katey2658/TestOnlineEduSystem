@@ -3,10 +3,9 @@ package com.katey2658.toes.entity;
 import java.util.Date;
 
 /**
- * Created by 11456 on 2016/11/22.
+ * Created by 11456 on 2016/11/27.
  */
-public class TestPaper {
-
+public class Score {
     /**
      * 课程编号
      */
@@ -33,29 +32,29 @@ public class TestPaper {
     }
 
     /**
-     * 参与人数
+     * 用户号
      */
-    private int joinNum;
+    private String userId;
 
-    public int getJoinNum() {
-        return joinNum;
+    public String getUserId() {
+        return userId;
     }
 
-    public void setJoinNum(int joinNum) {
-        this.joinNum = joinNum;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     /**
-     * 考试时间(分）
+     * 成绩
      */
-    private int time;
+    private int score;
 
-    public int getTime() {
-        return time;
+    public int getScore() {
+        return score;
     }
 
-    public void setTime(int time) {
-        this.time = time;
+    public void setScore(int score) {
+        this.score = score;
     }
 
     /**
@@ -72,17 +71,17 @@ public class TestPaper {
     }
 
     /**
-     * 截止时间
-
+     * 使用时间
      */
-    private Date endTime;
 
-    public Date getEndTime() {
-        return endTime;
+    private int useTime;
+
+    public int getUseTime() {
+        return useTime;
     }
 
-    public void setEndTime(Date endTime) {
-        this.endTime = endTime;
+    public void setUseTime(int useTime) {
+        this.useTime = useTime;
     }
 
 }
